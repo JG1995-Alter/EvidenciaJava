@@ -1,1 +1,41 @@
 
+package EvidenciaJAVA;
+
+public interface principal {
+    public void doctor();
+    
+    public void cita();
+}
+
+
+package EvidenciaJAVA;
+
+public abstract class doctor implements principal{
+    public void doctor(){
+        System.out.println("El nombre del doctor es John Doe");
+        System.out.println("ID: 12345");
+    }
+    
+}
+
+
+package EvidenciaJAVA;
+
+
+public abstract class paciente implements principal{
+    public void cita(){
+        System.out.println("El nombre del paciente es :");
+    }
+    
+}
+
+
+package EvidenciaJAVA;
+
+
+public abstract class cita implements principal{
+    public void cita(){
+        System.out.println("El tiempo y dia de la citas es: ");
+    }
+    
+}
