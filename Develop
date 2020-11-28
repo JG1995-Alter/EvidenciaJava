@@ -1,1 +1,18 @@
+Public class principal{
+
+Public class Doctor{
+String name = (“Dr….);
+Int ID;
+String especialidad = (“”);
+}
+Public class paciente extends Cita{
+String nameP;
+Int IDp;
+}
+Public class Cita{
+Int IDc;
+Int fecha;
+Int hora;
+String motive = (“”);
+}
 
