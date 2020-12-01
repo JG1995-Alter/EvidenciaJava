@@ -11,9 +11,12 @@ public interface principal {
 package EvidenciaJAVA;
 
 public abstract class doctor implements principal{
+   public abstract class doctor implements principal{
     public void doctor(){
+        Random rand = new Random();
+        int r = rand.nextInt(9999);
         System.out.println("El nombre del doctor es John Doe");
-        System.out.println("ID: 12345");
+        System.out.println("ID:"+r);
     }
     
 }
@@ -24,7 +27,11 @@ package EvidenciaJAVA;
 
 public abstract class paciente implements principal{
     public void cita(){
+        Random rand = new Random();
+        int r = rand.nextInt(9999);
         System.out.println("El nombre del paciente es :");
+        System.out.println("Numero unico del paciente: "+r);
+        System.out.println("Enfermendad o sindoma: ");
     }
     
 }
@@ -35,7 +42,11 @@ package EvidenciaJAVA;
 
 public abstract class cita implements principal{
     public void cita(){
+         Random rand = new Random();
+        int r = rand.nextInt(999);
         System.out.println("El tiempo y dia de la citas es: ");
+        System.out.println("Numero de la cita"+r);
     }
+    
     
 }
